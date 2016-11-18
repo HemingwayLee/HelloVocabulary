@@ -18,7 +18,7 @@ chrome.tabs.executeScript( {
     var isFound = false;
     for (var i = 0; i < vocabs.length; ++i) {
         var vocab = vocabs[i]['vocab'];
-        if (vocab == selection[0]) {
+        if (vocab == selection[0].toLowerCase()) {
             isFound = true;
             
             var str = '';
